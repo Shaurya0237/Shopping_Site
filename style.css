@@ -1,0 +1,216 @@
+body {
+  font-family: 'Merienda One', cursive;
+}
+
+.header {
+  background-color: #0a97b0;
+  height: 100px;
+  width: 100%;
+}
+
+.image img {
+  height: 120px;
+  margin-top: 50px;
+  margin-left: 20px;
+  float: left;
+}
+
+.search input {
+  width: 400px;
+  height: 20px;
+  margin-top: 40px;
+}
+
+.search button {
+  height: 26.5px;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.header .inner div {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.login {
+  margin-top: 40px;
+}
+
+.login button {
+  background-color: #3D94F6;
+  border-style: inset;
+  border-radius: 12px;
+  font-size: 15px;
+  padding: 5px;
+  text-shadow: 5 5 5 #FFFFFF;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  font-family: serif;
+}
+
+.login button:hover {
+  background-color: #FFFFFF;
+  border-color: black;
+  color: black;
+  border-style: inset;
+}
+
+.login img {
+  height: 250px;
+  width: 80px;
+  position: absolute;
+  margin-top: -110px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 20px;
+  float: right;
+  display: block;
+  text-align: center;
+}
+
+.nav {
+  background-color: #abf0e9;
+  height: 40px;
+  overflow: visible;
+}
+
+.nav a:hover {
+  background-color: #f4f6ff;
+  height: 40px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav .active {
+  background-color: #00005c;
+  color: white;
+  height: 40px;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #000000;
+}
+
+@keyframes fade {
+  from {
+    opacity: .2
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.offer1 {
+  background-color: white;
+  text-align: center;
+}
+
+.deals {
+  text-decoration: none;
+  background-color: white;
+}
+.deals a:hover{
+  color: green;
+}
+.deal1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main div {
+  float: left;
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+.content{
+  background-color: #0a97b0;
+  color: white;
+}
+.footer{
+  background-color: #0a97b0;
+  color: white;
+  font-family: sans-serif;
+}
+.backTo a{
+  text-decoration: none;
+  color: white;
+}
+.price{
+  color: #d54062;
+}
