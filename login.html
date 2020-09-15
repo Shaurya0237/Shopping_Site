@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Login Form</title>
+  <style media="screen">
+    body {
+      background: #778899;
+      font-family: sans-serif;
+      margin: 0;
+      color: white;
+    }
+
+    .box {
+      width: 350px;
+      height: 650px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 40px;
+      align-content: center;
+      text-align: center;
+      background: black;
+    }
+
+    .box h1 {
+      color: white;
+      text-align: center;
+    }
+
+    .box input {
+      border-radius: 20px;
+      background: none;
+      color: white;
+      outline: none;
+      border: 2px solid #e3eaa7;
+      height: 24px;
+
+    }
+
+    .button {
+      width: 90px;
+    }
+
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<script type="text/javascript" src="slytherin.js"></script>
+<body>
+
+  <form class="box" onsubmit="return Validate()" action="index.html">
+    <h1>Login</h1>
+    <img src="https://www.shareicon.net/data/512x512/2015/09/10/98908_man_512x512.png" height="90px" width="90px"><br>
+    <br><br><input style="text-align:center;" type="text" placeholder="Username" id="user" autocomplete="off">
+    <br><br><span id="username" style="font-weight:bold"></span>
+    <br><br>
+    <input style="text-align:center;" type="password" placeholder="Password" id="pass" text-align="center">
+    <br><br><span id="usep" style="font-weight:bold"></span>
+    <br><br>
+    <input class="button" type="submit" value="Login"><br><br>
+    <br><br><br>
+    <a href="#">Forgot Password </a><br>
+    <a href="#">Already have an account?</a>
+  </form>
+</body>
+
+</html>

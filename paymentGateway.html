@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Payment</title>
+  <style media="screen">
+    form {
+      line-height: 30px;
+    }
+
+    .in {
+      height: 20px;
+    }
+
+    .out {
+      height: 30px;
+    }
+
+    button {
+      height: 35px;
+      width: 120px;
+      margin-top: 20px;
+      background-color: #f9d56e;
+      border-radius: 20px;
+      border-color: #f9d56e;
+      font-size: 18px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src = "slytherin.js"></script>
+  <link rel="icon" href="favicon (1).ico">
+</head>
+
+<body bgcolor="#f0ece3">
+  <center>
+    <h1>Select a payment method</h1>
+    <div style="border: 1px solid grey; width: 50%; background-color: white;">
+      <h2>Another payment method</h2>
+      <hr width="95%">
+      <form action="index.html">
+        <table cellspacing = "10px">
+          <tr>
+            <td colspan = "3"> <input type="radio" name="pay"><b>Add Debit/Credit/ATM Card</b> </td>
+          </tr>
+          <tr>
+            <td colspan = "3">
+              <i class="fa fa-cc-visa" style="font-size:30px;color:blue"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-mastercard" style="font-size:30px;color:red"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-amex" style="font-size:30px;color:purple"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-diners-club" style="font-size:30px;color:green"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-discover" style="font-size:30px;color:magenta"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-paypal" style="font-size:30px;color:darkblue"></i> &nbsp; &nbsp; &nbsp; &nbsp;
+              <i class="fa fa-cc-stripe" style="font-size:30px;color:brown"></i>
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Name on card</td>
+            <td>Card number</td>
+            <td>Expiry date</td>
+          </tr>
+          <tr>
+            <td><input type="text" class="in" id = "pgName" onblur = "payGateName();"></td>
+            <td><input type="number" class="in" id = "card" onblur = "payGateCard();"></td>
+            <td><input type="month" class="in"></td>
+          </tr>
+          <tr>
+            <td><span id = "pgSname"></span></td>
+            <td><span id = "scard"></span></td>
+          </tr>
+          <tr>
+            <td colspan = "3"><input type="radio" name="pay"><b>Net Banking</b> </td>
+          </tr>
+          <tr>
+            <td colspan = "3">
+              <select class="out">
+                <option>Choose an Option</option>
+                <option>Airtel Payments Bank</option>
+                <option>Axis Bank</option>
+                <option>HDFC Bank</option>
+                <option>ICICI Bank</option>
+                <option>Kotak Bank</option>
+                <option>State Bank Of India</option>
+                <option>Other</option>
+              </select>
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> For faster payment and instant refund, please use UPI <a href="#">Why?</a> <br><br> </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> <input type="radio" name="pay"><b>Other UPI Apps</b> <br><br> </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> Please enter your UPI ID </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> <input class="in" type="text" placeholder="Ex: MobileNumber@upi">  <br><br> </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> <input type="radio" name="pay"><b>EMI</b> <br><br> </td>
+          </tr>
+          <tr>
+            <td colspan = "3"> <input type="radio" name="pay"><b>Pay on Delivery</b> </td>
+          </tr>
+          <tr>
+            <td colspan = "3">Pay digitally with SMS Pay Link or Cash. <a href="#">Know more.</a> <br><br> </td>
+          </tr>
+          <tr>
+            <td style = "text-align: right" colspan = "3">
+              <button><i class="fa fa-bookmark-o" style="font-size:18px"></i> &nbsp; Continue</button> <br><br>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </center>
+</body>
+
+</html>

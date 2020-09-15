@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    h1,
+    h2,
+    h3,
+    h4,
+    .heading,
+    label {
+      font-family: Arial, sans-serif;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: 21px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .heading {
+      line-height: 0;
+      font-size: 15px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+    }
+
+    input {
+      height: 20px;
+      padding: 3px 7px;
+      width: 400px;
+    }
+
+    div {
+      width: 700px;
+      background-color: white;
+      border-style: solid;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    select {
+      width: 420px;
+      height: 30px;
+    }
+
+    button {
+      height: 35px;
+      width: 120px;
+      margin-top: 20px;
+      background-color: #f9d56e;
+      border-radius: 20px;
+      border-color: #f9d56e;
+      font-size: 18px;
+    }
+  </style>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body bgcolor="#f0ece3">
+  <center>
+    <div class="formbox">
+      <form class="" onsubmit="return payAddPincode() && payAddName() && payAddPhone() " action="paymentGateway.html" method="post">
+
+        <table cellpadding="5px">
+          <tr>
+            <td>
+              <h1>Select a delivery address</h1>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2><i class='fas fa-home' style='font-size:25px;color:darkblue'></i>&nbsp&nbspEnter a new delivery address.</h2>
+              <p class="heading">(When finished, click the "Continue" button.)</p><br>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="fullName"><b><i class='fas fa-highlighter' style='font-size:18px;color:#eebb4d'></i>&nbsp&nbspFull Name:</b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="fullName" onblur="Jugaad()" id="pafullName" required><br><br> <span id="paName">&nbsp</span> </td>
+          </tr>
+          <tr>
+            <td><label for="mobile"><b><i class="fa fa-mobile-phone" style="font-size:22px"></i>&nbsp&nbspMobile Number: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="number" name="mobile" id="paPhone" onblur="Jugaad()" required><br><span id="paSphone">&nbsp</span></td>
+          </tr>
+          <tr>
+            <td><label for="pin"><b><i class="fa fa-paperclip" style="font-size:18px;color:red"></i>&nbsp&nbspPincode: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="pin" id="pin" onblur="Jugaad()" required><br><span id="spin">&nbsp</span></td>
+          </tr>
+          <tr>
+            <td><label for="houseNo"><b><i class='far fa-building' style='font-size:18px;color:green'></i>&nbsp&nbspFlat, House no., Building, Company, Apartment: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="houseNo" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="area"><b><i class='fas fa-igloo' style='font-size:18px;color:lightblue'></i>&nbsp&nbspArea, Colony, Street, Sector, Village: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="area" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="landmark"><b><i class='fas fa-map-pin' style='font-size:18px;color:purple'></i>&nbsp&nbspLandmark e.g. near apollo hospital: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="landmark" placeholder="E.g. Near AIIMS Flyover, Behind Regal Cinema, etc. "></td>
+          </tr>
+          <tr>
+            <td><label for="city"><b><i class="fa fa-arrow-circle-down" style="font-size:18px;color:orange"></i>&nbsp&nbspTown/city: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="city" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="state"><b><i class='fas fa-route' style='font-size:18px;color:darkred'></i>&nbsp&nbspState: </b></label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="state" required><br></td>
+          </tr>
+          <tr>
+            <td><label for="type"><b><i class='fas fa-industry' style='font-size:18px;color:lightgreen'></i>&nbsp&nbspAddress Type:</b></label></td>
+          </tr>
+          <tr>
+            <td>
+              <select class="type" name="type">
+                <option selected>Select an Address type</option>
+                <option>Home (7am-9pm delivery)</option>
+                <option>Office/>Commercial(10am-6pm delivery)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right">
+              <button type="submit"><i class="fa fa-bookmark-o" style="font-size:18px"></i> &nbsp; Continue</button><br><br>
+            </td>
+          </tr>
+        </table>
+
+      </form>
+    </div>
+  </center>
+  <script type="text/javascript" src="slytherin.js"></script>
+</body>
+
+</html>
